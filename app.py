@@ -12,14 +12,13 @@ app.secret_key = 'device_management_system'
 # Database connection
 def get_db_connection():
     return pymysql.connect(
-        host='localhost',
-        user='root',
-        password='987654321',
-        db='device_management',
+        host=os.getenv('AZURE_MYSQL_HOST'),
+        user=os.getenv('AZURE_MYSQL_USER'),
+        password=os.getenv('AZURE_MYSQL_PASSWORD'),
+        db=os.getenv('AZURE_MYSQL_NAME'),
         charset='utf8mb4',
         cursorclass=pymysql.cursors.DictCursor
     )
-
 # Create tables if not exists
 def init_db():
     conn = get_db_connection()
