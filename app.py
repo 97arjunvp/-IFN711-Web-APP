@@ -15,7 +15,7 @@ def get_db_connection():
         host='localhost',
         user='root',
         password='987654321',
-        db='device-management',
+        db='device_management',
         charset='utf8mb4',
         cursorclass=pymysql.cursors.DictCursor
     )
