@@ -68,4 +68,4 @@ jobs:
         with:
           app-name: 'inexinventory'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DE7E13EFB10842839B704FB61C3F2666 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9AD3F7F1BDE84F4199413AA5CDE08EA5 }}
